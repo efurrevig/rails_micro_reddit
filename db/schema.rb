@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_07_021510) do
     t.integer "post_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "comments_id", null: false
+    t.integer "comments_id"
     t.index ["comments_id"], name: "index_comments_on_comments_id"
     t.index ["post_id"], name: "index_comments_on_post_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
